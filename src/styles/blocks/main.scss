@@ -1,6 +1,5 @@
 .main {
   display: grid;
-  justify-content: center;
   gap: 48px 46px;
   padding: 50px 40px;
   grid-template-columns: repeat(1), 200px;
@@ -25,7 +24,7 @@
 
   @media (min-width: 1200px) {
     & {
-      grid-template-columns: 4;
+      grid-template-columns: repeat(4, minmax(auto, 200px));
       padding: 50px 128px;
     }
   }
